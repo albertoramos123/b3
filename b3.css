@@ -1,0 +1,235 @@
+body {
+    font-family: "Epilogue", Sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #73c1bf;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px; /* Adiciona algum padding lateral para melhor alinhamento */
+    margin: 0 auto;
+}
+
+header {
+    font-family: "Epilogue", Sans-serif;
+    position: fixed; /* Faz o cabeçalho ficar fixo na tela */
+    top: 0; /* Posiciona o cabeçalho no topo da página */
+    left: 0; 
+    width: 100%; 
+    color: #ffffff0e; 
+    padding: 10px;
+    z-index: 1000; 
+    background-color: #ffffff;
+    height: 100px;
+    opacity: 0.9;
+
+    
+}
+
+.logo {
+    width: 63px;
+    margin-right: 45px;
+}
+
+nav ul {
+    font-family: "Epilogue", Sans-serif;
+    list-style: none;
+    display: flex;
+    gap: 0%;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+nav ul li a {
+    color: #0a3a58;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    color: #73c1bf; 
+    text-decoration: none; /* Garante-sublinhado removido no hover */
+}
+
+.carousel-item img {
+    max-height: 100%; /* Define uma altura máxima para as imagens */
+    object-fit: cover; 
+}
+
+.carousel-item {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 50%; 
+    width: 50px; 
+    height: 50px; 
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    content: ''; /* Remove o conteúdo padrão */
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+}
+
+.carousel-control-prev-icon::before {
+    transform: rotate(135deg); /* Rotaciona a seta para esquerda */
+    -webkit-transform: rotate(135deg);
+}
+
+.carousel-control-next-icon::before {
+    transform: rotate(-45deg); /* Rotaciona a seta para direita */
+    -webkit-transform: rotate(-45deg);
+}
+
+.produtos {
+    font-family: "Epilogue", Sans-serif;
+    background-color: #ffffff;
+    color: #071f2c;
+   
+    padding: 48px 30px; /* Adiciona padding lateral */
+    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
+    box-sizing: border-box; /* Inclui o padding e border na largura total */
+    text-align: center; /* Centraliza o texto dentro da seção */
+  
+}
+.prod {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o retângulo e o h1 */
+    gap: 10px; /* Espaço entre o retângulo e o h1 */
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+
+
+.retangulo {
+    
+    height:1.5px;
+    width: 600px;
+    background-color:#071f2c;
+    margin-left: 10px; /* Espaçamento entre o h1 e o retângulo */
+
+}
+
+.card {
+    margin-right: 60px; /* Ajuste conforme necessário */
+    margin-left: 15px;
+    padding: 0;
+   
+  }
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Espaçamento entre os cards */
+    flex-wrap: nowrap; /* Garante que os cards fiquem na mesma linha */
+}
+
+
+
+.carousel-item {
+    padding: 80px 0; /* Ajuste o padding conforme necessário */
+}
+
+.card {
+    margin-right: 60px; /* Ajuste conforme necessário */
+    margin-left: 88px;
+    padding: 2%;
+}
+
+
+
+ 
+.legenda {
+    margin-top: 8px; /* Adiciona espaço entre a imagem e a legenda */
+    color: #071f2c; /* Cor da legenda */
+    font-size: 14px; /* Tamanho da fonte da legenda, ajuste conforme necessário */
+}
+
+.hero {
+    font-family: "Epilogue", Sans-serif;
+    background-color: #0a3a58;
+    background-size: cover;
+    color: #73c1bf;
+    padding: 50px 15px; /* Adiciona padding lateral */
+    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
+    box-sizing: border-box; /* Inclui o padding e border na largura total */
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.empresa {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.conteudo {
+    background-color: #73c1bf;
+    color: #0a3a58;
+    font-family: "Epilogue", Sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    border-radius: 20px;
+    padding: 20px; /* Adiciona padding interno */
+    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
+    box-sizing: border-box; /* Inclui o padding e border na largura total */
+}
+
+.mapa {
+    flex: 1;
+}
+
+.conteudo h2 {
+    flex: 1;
+    font-size: 1.2em;
+    margin-right: 0;
+    text-align: justify;
+    line-height: 1.8; /* Ajusta o espaçamento entre linhas */
+}
+
+.instagram {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.instagram a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.services {
+    font-family: "Epilogue", Sans-serif;
+    padding: 50px 15px; /* Adiciona padding lateral */
+    text-align: center;
+    color: #071f2c;
+    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
+    box-sizing: border-box; /* Inclui o padding e border na largura total */
+}
+
+.service-item {
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #0a3a58;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 15px; /* Adiciona padding lateral */
+}
