@@ -22,14 +22,15 @@ header {
     padding: 10px;
     z-index: 1000; 
     background-color: #ffffff;
-    height: 100px;
+    height: 80px;
     opacity: 0.9;
+
 
     
 }
 
 .logo {
-    width: 63px;
+    width: 49px;
     margin-right: 45px;
 }
 
