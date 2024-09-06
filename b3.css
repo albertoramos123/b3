@@ -9,7 +9,7 @@ body {
 .container {
     width: 100%;
     padding: 0 15px; /* Adiciona algum padding lateral para melhor alinhamento */
-    margin: 0 auto;
+
 }
 
 header {
@@ -22,7 +22,7 @@ header {
     padding: 10px;
     z-index: 1000; 
     background-color: #ffffff;
-    height: 80px;
+    height: 85px;
     opacity: 0.9;
 
 
@@ -253,7 +253,7 @@ nav ul li a {
     text-decoration: none;
     padding: 10px 15px;
     color: #333;
-    font-weight: 700;
+    font-weight: 70;
 }
 
 nav ul li a:hover {
