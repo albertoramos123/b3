@@ -300,4 +300,81 @@ nav ul li:hover .dropdown {
     vertical-align: middle; /* Alinha a imagem verticalmente com o texto */
     
   }
+  /* Estilo básico para o menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+/* Estilo dos links do menu */
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #333;
+    font-weight: 700;
+}
+
+/* Estilo do dropdown principal */
+.dropdown {
+    display: none; /* Inicialmente oculto */
+    position: absolute; /* Faz com que o dropdown apareça abaixo do item pai */
+    top: 100%; /* Posiciona o dropdown logo abaixo do item pai */
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 200px;
+    border-radius: 4px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo dos itens do dropdown */
+.dropdown li {
+    margin: 0;
+}
+
+.dropdown li a {
+    padding: 10px 20px;
+    color: #333;
+    display: block;
+    text-decoration: none;
+}
+
+/* Estilo de hover para itens do dropdown */
+.dropdown li a:hover {
+    background-color: #f8f9fa;
+}
+
+/* Mostrar dropdown ao passar o mouse sobre o item pai */
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+/* Configura o dropdown secundário para ser exibido ao passar o mouse sobre o item "Cadeiras" */
+.dropdown .dropdown {
+    display: none; /* Inicialmente oculto */
+    position: absolute; /* Faz com que o dropdown secundário apareça ao lado do item pai */
+    top: 0;
+    left: 100%;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 200px;
+    border-radius: 4px;
+}
+
+/* Mostrar dropdown secundário ao passar o mouse sobre o item "Cadeiras" */
+.dropdown li:hover > .dropdown {
+    display: block;
+}
+
   
