@@ -1,0 +1,86 @@
+/* Estilo da sidebar */
+body{
+    background-color: #ffffff;
+    font-family: "Epilogue", Sans-serif;
+    
+    
+  }
+  
+  .sidebar {
+    height: 100vh; /* Altura total da viewport */
+    position: fixed; /* Fixa a sidebar na posição */
+    top: 0;
+    left: 0;
+    width: 250px; /* Largura da sidebar */
+    background-color: #0e2431; /* Cor de fundo da sidebar */
+    padding: 1rem; /* Espaçamento interno */
+    border-right: 1px solid #0d1114; /* Borda direita */
+    color: #ffffff;
+   
+  }
+  
+  
+  
+  
+  .sidebar h4 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .sidebar h4 {
+   
+    margin-top: 15px; /* Espaçamento superior */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    color: #ffffff; /* Cor do texto */
+    border-bottom: 2px solid #677b87; /* Adiciona uma linha abaixo do título */
+    padding-bottom: 10px; /* Espaçamento entre o texto e a linha */
+  }
+     
+    
+  
+  
+  /* Estilo dos itens de navegação na sidebar */
+  .nav-underline .nav-link {
+    color: #ffffff; /* Cor do texto do link */
+    font-weight: 500; /* Peso da fonte dos links */
+    
+  }
+  
+  /* Estilo ao passar o mouse sobre os links */
+  .nav-underline .nav-link:hover {
+    color: #677b87; /* Cor do texto ao passar o mouse */
+    text-decoration: underline; 
+    text-decoration-color: #0a3a58;
+    text-decoration: none; 
+  }
+  
+  
+  
+  
+  
+  /* Estilo do conteúdo principal */
+  .content {
+    margin-left: 270px; /* Espaçamento à esquerda igual à largura da sidebar */
+    margin-top: 15px;
+    padding: 1rem;
+    color: #0e2431;
+    background-color: #ffffff;
+  
+  }
+  
+  /* Estilos para telas pequenas */
+  @media (max-width: 768px) {
+    .sidebar {
+      position: static; /* Faz a sidebar fluir com o conteúdo */
+      width: 100%; /* Largura total da tela */
+      height: auto; /* Altura automática */
+      margin-bottom: 1rem; /* Espaço abaixo da sidebar */
+    
+    }
+  
+  
+    .content {
+      margin-left: 0; /* Remove o espaçamento à esquerda */
+   
+    }
+  }
+  
