@@ -84,8 +84,30 @@ carousel-inner{
     margin-right: 60px; /* Ajuste conforme necessário */
     margin-left: 15px;
     border-color: #0a3a58;
+    box-shadow: #0a3a58;
+    
+    width: 200px; /* Largura fixa para todas as caixas */
+    height: 280px; /* Altura fixa para todas as caixas */
+   
+    flex-direction: column;
+    
+    padding: 2px; /* Espaçamento interno */
+    margin-top: 8%;
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total da caixa */
     
 }
+.card img {
+  display: block;
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  margin-top: 2%;
+  
+}
+
+.card h5 { /* Ou o seletor apropriado para o texto */
+  text-align: center; /* Centraliza o texto abaixo da imagem */
+  margin-top: 10px; /* Ajusta o espaço entre a imagem e o texto */
+}
+
 
   
   /* Estilos para telas pequenas */
