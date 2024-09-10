@@ -1,0 +1,183 @@
+.contact-section {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+    margin-top: 120px;
+}
+
+.contact-section h1 {
+    text-align: center;
+    color: #0a3a58;
+    margin-bottom: 20px;
+}
+
+.contact-section .retangulo {
+    width: 150px;
+    height: 10px;
+    background-color: #0a3a58;
+    margin: 0 auto 20px;
+}
+
+.contact-section p {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-info li {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #0a3a58;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info a img {
+    margin-right: 10px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-control {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+}
+
+.contact-form .btn-primary {
+    background-color: #0a3a58;
+    border-color: #0a3a58;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #07384d;
+    border-color: #07384d;
+}
+body {
+    font-family: "Epilogue", Sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #73c1bf;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px; /* Adiciona algum padding lateral para melhor alinhamento */
+}
+
+header {
+    font-family: "Epilogue", Sans-serif;
+    position: fixed; /* Faz o cabeçalho ficar fixo na tela */
+    top: 0; /* Posiciona o cabeçalho no topo da página */
+    left: 0;
+    width: 100%;
+    color: #ffffff0e;
+    padding: 10px;
+    z-index: 1000;
+    background-color: #ffffff;
+    height: 85px;
+    opacity: 0.9;
+}
+
+.logo {
+    width: 49px;
+    margin-right: 45px;
+}
+
+nav ul {
+    font-family: "Epilogue", Sans-serif;
+    list-style: none;
+    display: flex;
+    gap: 0%;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #0a3a58;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    color: #73c1bf;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+nav ul .dropdown,
+nav ul .sub-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 200px;
+    border-radius: 4px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul .sub-dropdown {
+    left: 100%;
+    top: 0;
+}
+
+nav ul li:hover > .dropdown,
+.dropdown li:hover > .sub-dropdown {
+    display: block;
+}
+
+nav ul .dropdown li a,
+nav ul .sub-dropdown li a {
+    padding: 10px 20px;
+    color: #333;
+    display: block;
+    text-decoration: none;
+}
+
+nav ul .dropdown li a:hover,
+nav ul .sub-dropdown li a:hover {
+    background-color: #f8f9fa;
+}
+.product-image {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}

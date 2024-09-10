@@ -116,8 +116,23 @@ nav ul .sub-dropdown li a:hover {
 }
 
 .produtos {
-    margin-top: 120px;
-    padding: 20px;
+    font-family: "Epilogue", Sans-serif;
+    background-color: #ffffff;
+    color: #071f2c;
+   
+    padding: 48px 30px; /* Adiciona padding lateral */
+    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
+    box-sizing: border-box; /* Inclui o padding e border na largura total */
+    text-align: center; /* Centraliza o texto dentro da seção */
+  
+}
+
+.prod {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o retângulo e o h1 */
+    gap: 10px; /* Espaço entre o retângulo e o h1 */
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
 }
 
 .prod h1 {
@@ -126,8 +141,173 @@ nav ul .sub-dropdown li a:hover {
 }
 
 .retangulo {
-    width: 150px;
-    height: 10px;
-    background-color: #0a3a58;
-    margin: 10px auto;
+    
+    height:1.5px;
+    width: 600px;
+    background-color:#071f2c;
+    margin-left: 10px; /* Espaçamento entre o h1 e o retângulo */
+
 }
+.hero {
+    font-family: "Epilogue", Sans-serif;
+    background-color: #0a3a58;
+    background-size: cover;
+    color: #73c1bf;
+    padding: 50px 15px; /* Adiciona padding lateral */
+    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
+    box-sizing: border-box; /* Inclui o padding e border na largura total */
+}
+
+.legenda {
+    margin-top: 8px; /* Adiciona espaço entre a imagem e a legenda */
+    color: #071f2c; /* Cor da legenda */
+    font-size: 14px; /* Tamanho da fonte da legenda, ajuste conforme necessário */
+}
+
+.hero p {
+    font-size: 20px;
+}
+.empresa {
+    text-align: center;
+    margin-bottom: 45px;
+    margin-top: 25px;
+    margin-left: 40px;
+   
+}
+
+.conteudo {
+    background-color: #ffffff;
+    color: #0a3a58;
+    font-family: "Epilogue", Sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    border-radius: 20px;
+    padding: 20px; /* Adiciona padding interno */
+    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
+    box-sizing: border-box; /* Inclui o padding e border na largura total */
+ 
+}
+
+.mapa {
+    flex: 1;
+}
+
+.conteudo h2 {
+    flex: 1;
+    font-size: 1.2em;
+    margin-right: 40px;
+    text-align: justify;
+    line-height: 1.8; /* Ajusta o espaçamento entre linhas */
+}
+
+.conteudo h1 {
+   
+    font-size: 28px;
+    
+}
+.instagram {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.instagram a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.services {
+    font-family: "Epilogue", Sans-serif;
+    padding: 50px 15px; /* Adiciona padding lateral */
+    text-align: center;
+    color: #071f2c;
+    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
+    box-sizing: border-box; /* Inclui o padding e border na largura total */
+}
+
+.service-item {
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #0a3a58;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 15px; /* Adiciona padding lateral */
+}
+.carousel-item img {
+    max-height: 100%; /* Define uma altura máxima para as imagens */
+    object-fit: cover; 
+}
+
+.carousel-item {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 50%; 
+    width: 50px; 
+    height: 50px; 
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    content: ''; /* Remove o conteúdo padrão */
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+}
+
+.carousel-control-prev-icon::before {
+    transform: rotate(135deg); /* Rotaciona a seta para esquerda */
+    -webkit-transform: rotate(135deg);
+}
+
+.carousel-control-next-icon::before {
+    transform: rotate(-45deg); /* Rotaciona a seta para direita */
+    -webkit-transform: rotate(-45deg);
+}
+
+.produtos {
+    font-family: "Epilogue", Sans-serif;
+    background-color: #ffffff;
+    color: #071f2c;
+   
+    padding: 48px 30px; /* Adiciona padding lateral */
+    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
+    box-sizing: border-box; /* Inclui o padding e border na largura total */
+    text-align: center; /* Centraliza o texto dentro da seção */
+  
+}
+.prod {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o retângulo e o h1 */
+    gap: 10px; /* Espaço entre o retângulo e o h1 */
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}
+.card{
+    margin-right: 60px; /* Ajuste conforme necessário */
+    margin-left: 15px;
+    padding: 0;
+    justify-content: center;
+    
+  
+   
+  }
+
+.card-wrapper {
+    display: flex;
+
+    align-items: center;
+    gap: 20px; /* Espaçamento entre os cards */
+    flex-wrap: nowrap; /* Garante que os cards fiquem na mesma linha */
+}
+
