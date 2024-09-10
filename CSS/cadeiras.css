@@ -6,6 +6,7 @@
   }
 }
 
+
 body{
     background-color: #ffffff;
     font-family: "Epilogue", Sans-serif;
@@ -28,7 +29,6 @@ body{
 
 
   .sidebar h4 {
-   
     margin-top: 15px; /* Espaçamento superior */
     margin-bottom: 20px; /* Espaçamento inferior */
     color: #ffffff; /* Cor do texto */
@@ -37,27 +37,19 @@ body{
     font-size: 23px;
   }
   
-  /* Estilo dos itens de navegação na sidebar */
-/* Estilo dos itens de navegação na sidebar */
 .nav-underline .nav-link {
     color: #ffffff; /* Cor do texto do link */
     font-weight: 500; /* Peso da fonte dos links */
     
   }
   
-  /* Estilo ao passar o mouse sobre os links */
   .nav-underline .nav-link:hover {
     color: #677b87; /* Cor do texto ao passar o mouse */
     text-decoration: underline; 
     text-decoration-color: #0a3a58;
     text-decoration: none; 
   }
-  /* Estilo para o link ativo */
   
-  /* Estilo para links desativados */
-  
-  
-  /* Estilo do conteúdo principal */
   .content {
     margin-left: 270px; /* Espaçamento à esquerda igual à largura da sidebar */
     margin-top: 15px; /* Espaçamento superior */
@@ -92,13 +84,10 @@ carousel-inner{
     margin-left: 15px;
     border-color: #0a3a58;
     box-shadow: #0a3a58;
-    
+    padding: 10px;
     width: 200px; /* Largura fixa para todas as caixas */
     height: 280px; /* Altura fixa para todas as caixas */
-   
     flex-direction: column;
-    
-    padding: 2px; /* Espaçamento interno */
     margin-top: 8%;
     box-sizing: border-box; /* Inclui padding e borda no tamanho total da caixa */
     
@@ -109,10 +98,16 @@ carousel-inner{
   margin-top: 2%;
   
 }
-
-.card h5 { /* Ou o seletor apropriado para o texto */
-  text-align: center; /* Centraliza o texto abaixo da imagem */
-  margin-top: 10px; /* Ajusta o espaço entre a imagem e o texto */
+.card-title {
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  color: #333;
+}
+.card-img-top {
+  /* Define um tamanho padrão para as imagens dos cartões */
+  height: 200px;
+  object-fit: cover;
 }
 
 
