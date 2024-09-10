@@ -1,3 +1,11 @@
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
 header {
     font-family: "Epilogue", Sans-serif;
     position: fixed; /* Faz o cabeçalho ficar fixo na tela */

@@ -1,4 +1,11 @@
 /* Estilo da sidebar */
+@media (max-width: 600px) {
+  .container {
+      width: 100%;
+      padding: 10px;
+  }
+}
+
 body{
     background-color: #ffffff;
     font-family: "Epilogue", Sans-serif;
