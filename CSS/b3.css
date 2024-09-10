@@ -52,12 +52,12 @@ nav ul li {
     position: relative;
     margin-right: 20px;
 }
-
+ 
 nav ul li a {
     color: #0a3a58;
     padding: 10px 20px;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 350;
 }
 
 nav ul li a:hover {
