@@ -9,24 +9,20 @@ body {
 .container {
     width: 100%;
     padding: 0 15px; /* Adiciona algum padding lateral para melhor alinhamento */
-
 }
 
 header {
     font-family: "Epilogue", Sans-serif;
     position: fixed; /* Faz o cabeçalho ficar fixo na tela */
     top: 0; /* Posiciona o cabeçalho no topo da página */
-    left: 0; 
-    width: 100%; 
-    color: #ffffff0e; 
+    left: 0;
+    width: 100%;
+    color: #ffffff0e;
     padding: 10px;
-    z-index: 1000; 
+    z-index: 1000;
     background-color: #ffffff;
     height: 85px;
     opacity: 0.9;
-
-
-    
 }
 
 .logo {
@@ -45,336 +41,93 @@ nav ul {
     margin-top: 5px;
 }
 
+nav ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
 nav ul li a {
     color: #0a3a58;
     padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 nav ul li a:hover {
-    color: #73c1bf; 
-    text-decoration: none; /* Garante-sublinhado removido no hover */
+    color: #73c1bf;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+nav ul .dropdown,
+nav ul .sub-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 200px;
+    border-radius: 4px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul .sub-dropdown {
+    left: 100%;
+    top: 0;
+}
+
+nav ul li:hover > .dropdown,
+.dropdown li:hover > .sub-dropdown {
+    display: block;
+}
+
+nav ul .dropdown li a,
+nav ul .sub-dropdown li a {
+    padding: 10px 20px;
+    color: #333;
+    display: block;
+    text-decoration: none;
+}
+
+nav ul .dropdown li a:hover,
+nav ul .sub-dropdown li a:hover {
+    background-color: #f8f9fa;
+}
+
+.product-image {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 .carousel-item img {
-    max-height: 100%; /* Define uma altura máxima para as imagens */
-    object-fit: cover; 
-}
-
-.carousel-item {
-    position: relative;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
+    max-height: 100%;
+    object-fit: cover;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); 
-    border-radius: 50%; 
-    width: 50px; 
-    height: 50px; 
-}
-
-.carousel-control-prev-icon::before,
-.carousel-control-next-icon::before {
-    content: ''; /* Remove o conteúdo padrão */
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 10px;
-}
-
-.carousel-control-prev-icon::before {
-    transform: rotate(135deg); /* Rotaciona a seta para esquerda */
-    -webkit-transform: rotate(135deg);
-}
-
-.carousel-control-next-icon::before {
-    transform: rotate(-45deg); /* Rotaciona a seta para direita */
-    -webkit-transform: rotate(-45deg);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
 }
 
 .produtos {
-    font-family: "Epilogue", Sans-serif;
-    background-color: #ffffff;
-    color: #071f2c;
-   
-    padding: 48px 30px; /* Adiciona padding lateral */
-    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
-    box-sizing: border-box; /* Inclui o padding e border na largura total */
-    text-align: center; /* Centraliza o texto dentro da seção */
-  
-}
-.prod {
-    display: flex;
-    align-items: center; /* Alinha verticalmente o retângulo e o h1 */
-    gap: 10px; /* Espaço entre o retângulo e o h1 */
-    align-items: center;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    margin-top: 120px;
+    padding: 20px;
 }
 
-
+.prod h1 {
+    text-align: center;
+    color: #0a3a58;
+}
 
 .retangulo {
-    
-    height:1.5px;
-    width: 600px;
-    background-color:#071f2c;
-    margin-left: 10px; /* Espaçamento entre o h1 e o retângulo */
-
-}
-
-.card {
-    margin-right: 60px; /* Ajuste conforme necessário */
-    margin-left: 15px;
-    padding: 0;
-   
-  }
-
-.card-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px; /* Espaçamento entre os cards */
-    flex-wrap: nowrap; /* Garante que os cards fiquem na mesma linha */
-}
-
-
-
-.carousel-item {
-    padding: 80px 0; /* Ajuste o padding conforme necessário */
-}
-
-.card {
-    margin-right: 60px; /* Ajuste conforme necessário */
-    margin-left: 88px;
-    padding: 2%;
-}
-
-
-
- 
-.legenda {
-    margin-top: 8px; /* Adiciona espaço entre a imagem e a legenda */
-    color: #071f2c; /* Cor da legenda */
-    font-size: 14px; /* Tamanho da fonte da legenda, ajuste conforme necessário */
-}
-
-.hero {
-    font-family: "Epilogue", Sans-serif;
+    width: 150px;
+    height: 10px;
     background-color: #0a3a58;
-    background-size: cover;
-    color: #73c1bf;
-    padding: 50px 15px; /* Adiciona padding lateral */
-    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
-    box-sizing: border-box; /* Inclui o padding e border na largura total */
+    margin: 10px auto;
 }
-
-.hero p {
-    font-size: 20px;
-}
-
-.empresa {
-    text-align: center;
-    margin-bottom: 45px;
-}
-
-.conteudo {
-    background-color: #73c1bf;
-    color: #0a3a58;
-    font-family: "Epilogue", Sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    border-radius: 20px;
-    padding: 20px; /* Adiciona padding interno */
-    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
-    box-sizing: border-box; /* Inclui o padding e border na largura total */
-}
-
-.mapa {
-    flex: 1;
-}
-
-.conteudo h2 {
-    flex: 1;
-    font-size: 1.2em;
-    margin-right: 0;
-    text-align: justify;
-    line-height: 1.8; /* Ajusta o espaçamento entre linhas */
-}
-
-.instagram {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.instagram a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.services {
-    font-family: "Epilogue", Sans-serif;
-    padding: 50px 15px; /* Adiciona padding lateral */
-    text-align: center;
-    color: #071f2c;
-    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
-    box-sizing: border-box; /* Inclui o padding e border na largura total */
-}
-
-.service-item {
-    margin: 20px 0;
-}
-
-footer {
-    background-color: #0a3a58;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px 15px; /* Adiciona padding lateral */
-}
-
-/* Estilização básica para o menu */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-}
-
-nav ul li {
-    position: relative;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    padding: 10px 15px;
-    color: #333;
-    font-weight: 70;
-}
-
-nav ul li a:hover {
-    color: #007bff;
-}
-
-/* Estilo do dropdown */
-.dropdown {
-    display: none;
-    position: relative;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
-    min-width: 200px;
-    border-radius: 4px;
-}
-
-.dropdown li {
-    margin: 0;
-}
-
-.dropdown li a {
-    padding: 10px 20px;
-    color: #333;
-    display: block;
-}
-
-.dropdown li a:hover {
-    background-color: #f8f9fa;
-}
-
-/* Mostrar dropdown ao passar o mouse */
-nav ul li:hover .dropdown {
-    display: grid;
-    position: absolute;
-}
-
-.product-image {
-    width: 30px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: 30px; /* Ajuste o tamanho da imagem conforme necessário */
-    margin-right: 10px; /* Adiciona espaço entre a imagem e o texto */
-    vertical-align: middle; /* Alinha a imagem verticalmente com o texto */
-    
-  }
-  /* Estilo básico para o menu */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-}
-
-nav ul li {
-    position: relative;
-    margin-right: 20px;
-}
-
-/* Estilo dos links do menu */
-nav ul li a {
-    text-decoration: none;
-    padding: 10px 15px;
-    color: #333;
-    font-weight: 700;
-}
-
-/* Estilo do dropdown principal */
-.dropdown {
-    display: none; /* Inicialmente oculto */
-    position: absolute; /* Faz com que o dropdown apareça abaixo do item pai */
-    top: 100%; /* Posiciona o dropdown logo abaixo do item pai */
-    left: 0;
-    background-color: #fff;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    min-width: 200px;
-    border-radius: 4px;
-    padding: 0;
-    margin: 0;
-}
-
-/* Estilo dos itens do dropdown */
-.dropdown li {
-    margin: 0;
-}
-
-.dropdown li a {
-    padding: 10px 20px;
-    color: #333;
-    display: block;
-    text-decoration: none;
-}
-
-/* Estilo de hover para itens do dropdown */
-.dropdown li a:hover {
-    background-color: #f8f9fa;
-}
-
-/* Mostrar dropdown ao passar o mouse sobre o item pai */
-nav ul li:hover .dropdown {
-    display: block;
-}
-
-/* Configura o dropdown secundário para ser exibido ao passar o mouse sobre o item "Cadeiras" */
-.dropdown .dropdown {
-    display: none; /* Inicialmente oculto */
-    position: absolute; /* Faz com que o dropdown secundário apareça ao lado do item pai */
-    top: 0;
-    left: 100%;
-    background-color: #fff;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    min-width: 200px;
-    border-radius: 4px;
-}
-
-/* Mostrar dropdown secundário ao passar o mouse sobre o item "Cadeiras" */
-.dropdown li:hover > .dropdown {
-    display: block;
-}
-
-  
