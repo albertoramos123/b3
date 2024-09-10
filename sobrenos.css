@@ -93,8 +93,8 @@ nav ul .sub-dropdown li a:hover {
 
 .about-section {
     padding: 100px 0;
-    background-color: #962222;
-    margin-top: 150%; /* Aumentado para garantir que fique abaixo do cabeçalho */
+    background-color: #ffffff;
+    margin-top: 1px; /* Aumentado para garantir que fique abaixo do cabeçalho */
     z-index: 10;
 }
 
