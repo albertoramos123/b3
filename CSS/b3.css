@@ -42,7 +42,6 @@ header {
     position: relative;
     display: inline-block;
     text-decoration: none;
-    color: #000; /* Cor do texto */
     padding-top: 5px; /* Espaço para o traço */
 }
 
@@ -53,7 +52,7 @@ header {
     bottom: 0; /* Posiciona o traço acima do texto */
     width: 0; /* Começa com largura 0 */
     height: 2px; /* Altura da linha */
-    background-color: #73c1bf; /* Cor do traço */
+    background-color:#0a3a58; /* Cor do traço */
     transform: translateX(-50%); /* Ajusta a posição horizontal para o centro */
     transform-origin: center; /* Origem da animação no centro */
     transition: width 0.3s ease; /* Transição suave da largura */
@@ -84,6 +83,7 @@ nav ul li {
 nav ul li a {
     color: #0a3a58;
     padding: 10px 20px;
+   
     font-weight: 350;
 }
 
@@ -134,16 +134,13 @@ nav ul .sub-dropdown li a:hover {
     background-color: #f8f9fa;
 }
 
-.product-image {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
 
-.carousel-item img {
-    max-height: 100%;
-    object-fit: cover;
+
+
+.first-carousel .carousel-item img {
+    width: 100%; 
+    height: 880px; 
+    object-fit: cover; 
 }
 
 .carousel-control-prev-icon,
@@ -156,32 +153,45 @@ nav ul .sub-dropdown li a:hover {
     font-family: "Epilogue", Sans-serif;
     background-color: #ffffff;
     color: #071f2c;
-   
-    padding: 48px 30px; /* Adiciona padding lateral */
+   height: 600px;
+    padding: 30px 30px; /* Adiciona padding lateral */
     width: 100%; /* Garante que a seção ocupe toda a largura disponível */
     box-sizing: border-box; /* Inclui o padding e border na largura total */
     text-align: center; /* Centraliza o texto dentro da seção */
+    font-weight: 50;
   
 }
 
+.product-image {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+
+}
+
 .prod {
+    margin-bottom: 45px;
     display: flex;
     align-items: center; /* Alinha verticalmente o retângulo e o h1 */
     gap: 10px; /* Espaço entre o retângulo e o h1 */
     align-items: center;
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
+   
 }
 
 .prod h1 {
     text-align: center;
     color: #0a3a58;
+    font-size: 30px;
+    font-weight: 50;
 }
 
 .retangulo {
     
     height:1.5px;
     width: 600px;
-    background-color:#071f2c;
+    background-color: #0a3a58;
     margin-left: 10px; /* Espaçamento entre o h1 e o retângulo */
 
 }
@@ -274,9 +284,14 @@ footer {
     padding: 20px 15px; /* Adiciona padding lateral */
 }
 .carousel-item img {
-    max-height: 100%; /* Define uma altura máxima para as imagens */
+    max-height: 100%; 
     object-fit: cover; 
+    width: 100%; 
+    height: 290px; 
 }
+
+ 
+
 
 .carousel-item {
     position: relative;
