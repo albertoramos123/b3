@@ -1,10 +1,5 @@
-/* Estilo da sidebar */
-@media (max-width: 600px) {
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-  }
+
+  
 
 body {
     font-family: "Epilogue", Sans-serif;
@@ -199,4 +194,12 @@ nav ul .sub-dropdown li a:hover {
 .contact-form .btn-primary:hover {
     background-color: #07384d;
     border-color: #07384d;
+}
+
+.product-image {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+
 }
