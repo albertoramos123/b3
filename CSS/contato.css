@@ -1,90 +1,11 @@
-
+/* Estilo da sidebar */
 @media (max-width: 600px) {
     .container {
         width: 100%;
         padding: 10px;
     }
-}
+  }
 
-.contact-section {
-    padding: 100px 0;
-    background-color: #f9f9f9;
-    margin-top: 120px;
-}
-
-.contact-section h1 {
-    text-align: center;
-    color: #0a3a58;
-    margin-bottom: 20px;
-}
-
-.contact-section .retangulo {
-    width: 150px;
-    height: 10px;
-    background-color: #0a3a58;
-    margin: 0 auto 20px;
-}
-
-.contact-section p {
-    text-align: center;
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 40px;
-}
-
-.contact-info {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.contact-info li {
-    display: inline-block;
-    margin: 0 20px;
-    font-size: 18px;
-}
-
-.contact-info a {
-    text-decoration: none;
-    color: #0a3a58;
-    display: flex;
-    align-items: center;
-}
-
-.contact-info a img {
-    margin-right: 10px;
-}
-
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact-form .form-group {
-    margin-bottom: 20px;
-}
-
-.contact-form .form-control {
-    border-radius: 4px;
-    border: 1px solid #ced4da;
-    padding: 10px;
-}
-
-.contact-form .btn-primary {
-    background-color: #0a3a58;
-    border-color: #0a3a58;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-}
-
-.contact-form .btn-primary:hover {
-    background-color: #07384d;
-    border-color: #07384d;
-}
 body {
     font-family: "Epilogue", Sans-serif;
     margin: 0;
@@ -132,16 +53,17 @@ nav ul li {
     position: relative;
     margin-right: 20px;
 }
-
+ 
 nav ul li a {
     color: #0a3a58;
     padding: 10px 20px;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 350;
 }
 
 nav ul li a:hover {
     color: #73c1bf;
+    text-decoration: none;
 }
 
 nav ul li:hover .dropdown {
@@ -183,9 +105,98 @@ nav ul .dropdown li a:hover,
 nav ul .sub-dropdown li a:hover {
     background-color: #f8f9fa;
 }
-.product-image {
-    width: 30px;
-    height: 30px;
+/* Estilo da seção de contato */
+.contact-section {
+   
+    position: relative; /* Adicionado para controle de layout */
+    padding: 100px 0;
+    background-color: #f9f9f9;
+   
+}
+
+.contact-section h1 {
+    margin-top: 35px;
+    text-align: center;
+    color: #0a3a58;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 150;
+}
+
+.contact-section .retangulo {
+    width: 150px;
+    height: 1.5px;
+    background-color: #0a3a58;
+    margin: 10px auto 50px;
+    margin-top: -10px; /* Ajuste o valor conforme necessário */
+    margin-bottom: 35px;
+}
+
+.contact-section p {
+    font-weight: 350;
+    text-align: center;
+    font-size: 18px;
+    color:#0a3a58;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-info li {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #0a3a58;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info a img {
     margin-right: 10px;
-    vertical-align: middle;
+    max-width: 28px;
+    color: #0a3a58;
+   
+}
+
+.contact-form ar{
+    max-width: 25px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-control {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+}
+
+.contact-form .btn-primary {
+    background-color: #0a3a58;
+    border-color: #0a3a58;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #07384d;
+    border-color: #07384d;
 }

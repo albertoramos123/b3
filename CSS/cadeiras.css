@@ -79,6 +79,10 @@ carousel-inner{
     padding: 40px 0; /* Ajuste o padding conforme necessário */
 }
 
+.contact-info img arroba{
+  max-width: 20px;
+}
+
 .card {
     margin-right: 60px; /* Ajuste conforme necessário */
     margin-left: 15px;
