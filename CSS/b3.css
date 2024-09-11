@@ -27,8 +27,8 @@ header {
     color: #ffffff0e;
     padding: 10px;
     z-index: 1000;
-    background-color: #ffffff;
-    height: 85px;
+    background-color: #ffffffda;
+    height: 90px;
     opacity: 0.9;
 }
 
@@ -43,13 +43,14 @@ header {
     display: inline-block;
     text-decoration: none;
     padding-top: 5px; /* Espaço para o traço */
+  
 }
 
 .menu-item a::before {
     content: '';
     position: absolute;
     left: 50%; /* Centraliza horizontalmente */
-    bottom: 0; /* Posiciona o traço acima do texto */
+    bottom: 0; 
     width: 0; /* Começa com largura 0 */
     height: 2px; /* Altura da linha */
     background-color:#0a3a58; /* Cor do traço */
@@ -70,7 +71,7 @@ nav ul {
     justify-content: center;
     align-items: center;
     font-size: 15px;
-    margin-top: 5px;
+    margin-top: 12px;
     
 }
 
@@ -134,13 +135,32 @@ nav ul .sub-dropdown li a:hover {
     background-color: #f8f9fa;
 }
 
+.back h1{
+   
+    text-shadow: #071f2c;
+    color: #ffffff;
+    opacity: 50%;
+    position: absolute;
+    z-index: 1;
+    font-size: 100px;
+    font-weight: 100;
+    width: 100%; 
+    box-sizing: border-box; /* Inclui o padding e border na largura total */
+    text-align: center;
+    margin-top: 20%;
+   
+
+
+}
 
 
 
 .first-carousel .carousel-item img {
+    position: relative ;
     width: 100%; 
     height: 880px; 
     object-fit: cover; 
+    z-index: -1;
 }
 
 .carousel-control-prev-icon,
@@ -152,8 +172,8 @@ nav ul .sub-dropdown li a:hover {
 .produtos {
     font-family: "Epilogue", Sans-serif;
     background-color: #ffffff;
-    color: #071f2c;
-   height: 600px;
+    color: #0a3a58;
+    height: 600px;
     padding: 30px 30px; /* Adiciona padding lateral */
     width: 100%; /* Garante que a seção ocupe toda a largura disponível */
     box-sizing: border-box; /* Inclui o padding e border na largura total */

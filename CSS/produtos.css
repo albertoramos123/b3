@@ -15,7 +15,7 @@ body{
   }
   
   .sidebar {
-    height: 100vh; /* Altura total da viewport */
+    height: 100vh; 
     position: fixed; /* Fixa a sidebar na posição */
     top: 0;
     left: 0;
