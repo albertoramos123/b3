@@ -62,3 +62,54 @@ document.querySelectorAll('.dropdown li').forEach(subItem => {
         }
     });
 });
+
+
+
+
+//CSS cadeiras
+document.addEventListener('DOMContentLoaded', () => {
+    const container = document.querySelector('.containerCards');
+    const cards = document.querySelectorAll('.card');
+  
+    // Adiciona a classe 'hovering' ao container quando o mouse está sobre um dos cartões
+    container.addEventListener('mouseover', (event) => {
+      if (event.target.closest('.card')) {
+        container.classList.add('hovering');
+      }
+    });
+  
+    // Remove a classe 'hovering' do container quando o mouse sai de todos os cartões
+    container.addEventListener('mouseout', (event) => {
+      // Verifica se o mouse saiu de todos os cartões
+      let mouseOutOfCards = true;
+      cards.forEach(card => {
+        if (card.matches(':hover')) {
+          mouseOutOfCards = false;
+        }
+      });
+  
+      if (mouseOutOfCards) {
+        container.classList.remove('hovering');
+      }
+    });
+  });
+  
+
+
+
+  let lastScrollTop = 0;
+  const header = document.querySelector('header');
+
+  window.addEventListener('scroll', () => {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      // Rolando para baixo
+      header.style.top = '-90px'; // Oculta o cabeçalho (ajuste -90px conforme necessário)
+    } else {
+      // Rolando para cima
+      header.style.top = '0px'; // Mostra o cabeçalho
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Para Mobile Safari
+  });

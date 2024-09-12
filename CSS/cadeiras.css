@@ -11,6 +11,135 @@ body {
   font-family: "Epilogue", Sans-serif;
 }
 
+
+.container {
+  width: 100%;
+  padding: 0 15px; /* Adiciona algum padding lateral para melhor alinhamento */
+}
+
+header {
+  font-family: "Epilogue", Sans-serif;
+  position:fixed; /* Faz o cabeçalho ficar fixo na tela */
+  top: 0; /* Posiciona o cabeçalho no topo da página */
+  right: 0;
+  width: 95%;
+
+  color: #ffffff0e;
+  padding: 10px;
+  z-index: 1000;
+  background-color: #0e2431;
+  height: 90px;
+  transition: top 0.3s; /* Adiciona uma transição suave */
+  
+  
+}
+.main-content {
+  padding-top: 90px; /* Deve corresponder à altura do cabeçalho */
+}
+
+
+.logo1 {
+  width: 49px;
+  margin-right: 45px;
+  color: #00131f;
+left-transform: translate(-50%, -50%); /* Centraliza o logo */
+
+  filter: brightness(0) invert(1) grayscale(100%); /* Faz a imagem branca */
+  opacity: 0.7;
+  
+}
+
+.menu-item a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding-top: 5px; /* Espaço para o traço */
+}
+
+.menu-item a::before {
+  content: "";
+  position: absolute;
+  left: 50%; /* Centraliza horizontalmente */
+  bottom: 0;
+  width: 0; /* Começa com largura 0 */
+  height: 2px; /* Altura da linha */
+  background-color: #0a3a58; /* Cor do traço */
+  transform: translateX(-50%); /* Ajusta a posição horizontal para o centro */
+  transform-origin: center; /* Origem da animação no centro */
+  transition: width 0.3s ease; /* Transição suave da largura */
+}
+
+.menu-item a:hover::before {
+  width: 50%; /* Expande a linha para a largura total */
+}
+
+nav ul {
+  font-family: "Epilogue", Sans-serif;
+  list-style: none;
+  display: flex;
+  gap: 0%;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  margin-top: 12px;
+}
+
+nav ul li {
+  position: relative;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  padding: 10px 20px;
+
+  font-weight: 350;
+}
+
+nav ul li a:hover {
+  color: #73c1bf;
+  text-decoration: none; /* Garante-sublinhado removido no hover */
+}
+
+nav ul li:hover .dropdown {
+  display: block;
+}
+
+nav ul .dropdown,
+nav ul .sub-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul .sub-dropdown {
+  left: 100%;
+  top: 0;
+}
+
+nav ul li:hover > .dropdown,
+.dropdown li:hover > .sub-dropdown {
+  display: block;
+}
+
+nav ul .dropdown li a,
+nav ul .sub-dropdown li a {
+  padding: 10px 20px;
+  color: #333;
+  display: block;
+}
+
+nav ul .dropdown li a:hover,
+nav ul .sub-dropdown li a:hover {
+  background-color: #f8f9fa;
+}
+
 .sidebar {
   height: 100vh; /* Altura total da viewport */
   position: fixed; /* Fixa a sidebar na posição */
@@ -19,15 +148,18 @@ body {
   width: 250px; /* Largura da sidebar */
   background-color: #0e2431; /* Cor de fundo da sidebar */
   padding: 1rem; /* Espaçamento interno */
-  border-right: 1px solid #0d1114; /* Borda direita */
+  border-right: 1px solid #1e475f79; /* Borda direita */
+  border-width: 10px;
   color: #ffffff;
+  z-index: 11000;
 }
 
 .sidebar h4 {
   margin-top: 15px; /* Espaçamento superior */
   margin-bottom: 20px; /* Espaçamento inferior */
   color: #ffffff; /* Cor do texto */
-  border-bottom: 2px solid #677b87; /* Adiciona uma linha abaixo do título */
+  border-bottom: 2px solid #1e475f79; /* Adiciona uma linha abaixo do título */
+
   padding-bottom: 10px; /* Espaçamento entre o texto e a linha */
   font-size: 23px;
 }
@@ -87,6 +219,7 @@ carousel-inner {
   box-sizing: border-box; /* Inclui padding e borda no tamanho total */
   position: relative; /* Necessário para posicionamento do hover */
   transition: transform 0.3s, opacity 0.3s; /* Transições suaves */
+  opacity: 1;
 }
 
 /* Estilização da imagem dentro do cartão */
@@ -114,7 +247,7 @@ carousel-inner {
 /* Efeito de hover no cartão */
 .card:hover { 
   transform: translateY(-20px); /* Levanta o cartão ao passar o mouse */
-  box-shadow: 0 16px 500px#0a3a585f;
+  box-shadow: 0 16px 500px #0a3a585f;
 }
 
 /* Efeito de hover na imagem do cartão */
@@ -133,7 +266,7 @@ carousel-inner {
 
 /* Efeito de hover no container */
 .containerCards:hover .card {
-  opacity: 0.7; /* Torna todos os cartões mais transparentes ao passar o mouse sobre o container */
+  opacity: 1; /* Torna todos os cartões mais transparentes ao passar o mouse sobre o container */
 }
 
 /* Remove a opacidade reduzida do cartão que está sendo hoverado */

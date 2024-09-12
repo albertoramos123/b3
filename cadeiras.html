@@ -17,7 +17,147 @@
     />
   </head>
   <body>
+    
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <img class="logo1"
+              src="IMG/Logob3.png"
+              alt="Logo B3 Ambientes Corporativos"
+              class="logo"
+            />
+            <li class="menu-item"><a href="sobrenos.html">Sobre nós</a></li>
+            <li class="menu-item">
+              <a href="#"> Produtos</a>
+              <ul class="dropdown">
+                <li class="menu-item">
+                  <a href="#">
+                    <img
+                      class="product-image"
+                      src="https://img.icons8.com/?size=100&id=25289&format=png&color=000000"
+                      alt="table"/>
+                    Poltronas
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="cadeiras.html"
+                    ><img
+                      class="product-image"
+                      src="https://img.icons8.com/ios/50/office-chair-2.png"
+                      alt="table"
+                    />
+                    Cadeiras</a
+                  >
+
+                  <ul class="sub-dropdown">
+                    <li><a href="#">- Operativas</a></li>
+                    <li><a href="#">- Diretivas</a></li>
+                    <li><a href="#">- Multifuncionais</a></li>
+                    <li><a href="#">- Decor</a></li>
+                    <li><a href="#">- Puff</a></li>
+                    <li><a href="#">- Auditório</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="mobiliario.html"
+                    ><img
+                      class="product-image"
+                      src="https://img.icons8.com/ios/50/table.png"
+                      alt="table"
+                    />
+                    Mobiliário</a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="product-image"
+                      src="https://img.icons8.com/isometric-line/50/report-card.png"
+                      alt="table"
+                    />
+                    Divisórias</a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="product-image"
+                      src="https://img.icons8.com/windows/32/wardrobe.png"
+                      alt="table"
+                    />
+                    Armários</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      class="product-image"
+                      src="https://img.icons8.com/?size=100&id=11555&format=png&color=000000"
+                      alt="table"
+                    />
+                    Acústicas</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      class="product-image"
+                      src="https://img.icons8.com/?size=100&id=33796&format=png&color=000000"
+                      alt="table"/>
+                    Sofás</a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      class="product-image"
+                      src="https://img.icons8.com/?size=100&id=11321&format=png&color=000000"
+                      alt="table"
+                    />
+                    Escolar</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      class="product-image"
+                      src="https://img.icons8.com/?size=100&id=60612&format=png&color=000000"
+                      alt="table"
+                    />
+                    Refeitório</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      class="product-image"
+                      src="https://img.icons8.com/windows/32/ellipsis.png"
+                      alt="table"
+                    />
+                    Outros</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="https://forms.gle/FAqarJxgnt2YT5mD8">Arquitetos</a>
+            </li>
+            <li class="menu-item">
+              <a
+                href="https://drive.google.com/file/d/1OQqKCnvcf6vvEbHztaHXVQsgfnRhGKnw/view?usp=sharing"
+                >Catálogos</a
+              >
+            </li>
+            <li class="menu-item"><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+   <main class="main-content">
+
     <div class="sidebar">
+      
       <h4>CADEIRAS</h4>
       <ul class="nav nav-underline flex-column">
         <li class="nav-item">
@@ -218,6 +358,27 @@
         </div>
       </div>
     </div>
+  </main>
+
+
+    <script> let lastScrollTop = 0;
+      const header = document.querySelector('header');
+    
+      window.addEventListener('scroll', () => {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+        if (scrollTop > lastScrollTop) {
+          // Rolando para baixo
+          header.style.top = '-90px'; // Oculta o cabeçalho (ajuste -90px conforme necessário)
+        } else {
+          // Rolando para cima
+          header.style.top = '0px'; // Mostra o cabeçalho
+        }
+    
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Para Mobile Safari
+      });
+    </script> 
+
 
     <!-- Script do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
