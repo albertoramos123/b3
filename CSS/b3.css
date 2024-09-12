@@ -1,385 +1,384 @@
 @media (max-width: 600px) {
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
 }
 
 body {
-    font-family: "Epilogue", Sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #73c1bf;
+  font-family: "Epilogue", Sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #73c1bf;
 }
 
 .container {
-    width: 100%;
-    padding: 0 15px; /* Adiciona algum padding lateral para melhor alinhamento */
+  width: 100%;
+  padding: 0 15px; /* Adiciona algum padding lateral para melhor alinhamento */
 }
 
 header {
-    font-family: "Epilogue", Sans-serif;
-    position: fixed; /* Faz o cabeçalho ficar fixo na tela */
-    top: 0; /* Posiciona o cabeçalho no topo da página */
-    left: 0;
-    width: 100%;
-    color: #ffffff0e;
-    padding: 10px;
-    z-index: 1000;
-    background-color: #ffffffda;
-    height: 90px;
-    opacity: 0.9;
+  font-family: "Epilogue", Sans-serif;
+  position: fixed; /* Faz o cabeçalho ficar fixo na tela */
+  top: 0; /* Posiciona o cabeçalho no topo da página */
+  left: 0;
+  width: 100%;
+  color: #ffffff0e;
+  padding: 10px;
+  z-index: 1000;
+  background-color: #ffffffda;
+  height: 90px;
+  opacity: 0.9;
 }
 
 .logo {
-    width: 49px;
-    margin-right: 45px;
+  width: 49px;
+  margin-right: 45px;
 }
 
-
 .menu-item a {
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    padding-top: 5px; /* Espaço para o traço */
-  
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding-top: 5px; /* Espaço para o traço */
 }
 
 .menu-item a::before {
-    content: '';
-    position: absolute;
-    left: 50%; /* Centraliza horizontalmente */
-    bottom: 0; 
-    width: 0; /* Começa com largura 0 */
-    height: 2px; /* Altura da linha */
-    background-color:#0a3a58; /* Cor do traço */
-    transform: translateX(-50%); /* Ajusta a posição horizontal para o centro */
-    transform-origin: center; /* Origem da animação no centro */
-    transition: width 0.3s ease; /* Transição suave da largura */
+  content: "";
+  position: absolute;
+  left: 50%; /* Centraliza horizontalmente */
+  bottom: 0;
+  width: 0; /* Começa com largura 0 */
+  height: 2px; /* Altura da linha */
+  background-color: #0a3a58; /* Cor do traço */
+  transform: translateX(-50%); /* Ajusta a posição horizontal para o centro */
+  transform-origin: center; /* Origem da animação no centro */
+  transition: width 0.3s ease; /* Transição suave da largura */
 }
 
 .menu-item a:hover::before {
-    width: 50%; /* Expande a linha para a largura total */
+  width: 50%; /* Expande a linha para a largura total */
 }
 
 nav ul {
-    font-family: "Epilogue", Sans-serif;
-    list-style: none;
-    display: flex;
-    gap: 0%;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    margin-top: 12px;
-    
+  font-family: "Epilogue", Sans-serif;
+  list-style: none;
+  display: flex;
+  gap: 0%;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  margin-top: 12px;
 }
 
 nav ul li {
-    position: relative;
-    margin-right: 20px;
-    
+  position: relative;
+  margin-right: 20px;
 }
- 
+
 nav ul li a {
-    color: #0a3a58;
-    padding: 10px 20px;
-   
-    font-weight: 350;
+  color: #0a3a58;
+  padding: 10px 20px;
+
+  font-weight: 350;
 }
 
 nav ul li a:hover {
-    color: #73c1bf; 
-    text-decoration: none; /* Garante-sublinhado removido no hover */
+  color: #73c1bf;
+  text-decoration: none; /* Garante-sublinhado removido no hover */
 }
 
-
-
 nav ul li:hover .dropdown {
-    display: block;
+  display: block;
 }
 
 nav ul .dropdown,
 nav ul .sub-dropdown {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    min-width: 200px;
-    border-radius: 4px;
-    padding: 0;
-    margin: 0;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul .sub-dropdown {
-    left: 100%;
-    top: 0;
+  left: 100%;
+  top: 0;
 }
 
 nav ul li:hover > .dropdown,
 .dropdown li:hover > .sub-dropdown {
-    display: block;
+  display: block;
 }
 
 nav ul .dropdown li a,
 nav ul .sub-dropdown li a {
-    padding: 10px 20px;
-    color: #333;
-    display: block;
-    text-decoration: none;
+  padding: 10px 20px;
+  color: #333;
+  display: block;
 }
 
 nav ul .dropdown li a:hover,
 nav ul .sub-dropdown li a:hover {
-    background-color: #f8f9fa;
+  background-color: #f8f9fa;
 }
 
-.back h1{
-   
-    text-shadow: #071f2c;
-    color: #ffffff;
-    opacity: 50%;
-    position: absolute;
-    z-index: 1;
-    font-size: 100px;
-    font-weight: 100;
-    width: 100%; 
-    box-sizing: border-box; /* Inclui o padding e border na largura total */
-    text-align: center;
-    margin-top: 20%;
-   
+.logo2 {
+  position: absolute;
+  z-index: 1;
+  width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto; /* Mantém a proporção original da imagem */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza o logo */
 
-
+  filter: brightness(0) invert(1) grayscale(100%); /* Faz a imagem branca */
+  opacity: 0.7; /* Ajusta a transparência (0 é totalmente transparente, 1 é totalmente opaco) */
 }
-
-
 
 .first-carousel .carousel-item img {
-    position: relative ;
-    width: 100%; 
-    height: 880px; 
-    object-fit: cover; 
-    z-index: -1;
+  position: relative;
+  width: 100%;
+  height: 880px;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
 }
 
 .produtos {
-    font-family: "Epilogue", Sans-serif;
-    background-color: #ffffff;
-    color: #0a3a58;
-    height: 600px;
-    padding: 30px 30px; /* Adiciona padding lateral */
-    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
-    box-sizing: border-box; /* Inclui o padding e border na largura total */
-    text-align: center; /* Centraliza o texto dentro da seção */
-    font-weight: 50;
-  
+  font-family: "Epilogue", Sans-serif;
+  background-color: #ffffff;
+  color: #0a3a58;
+  height: 600px;
+  padding: 30px 30px; /* Adiciona padding lateral */
+  width: 100%; /* Garante que a seção ocupe toda a largura disponível */
+  box-sizing: border-box; /* Inclui o padding e border na largura total */
+  text-align: center; /* Centraliza o texto dentro da seção */
+  font-weight: 50;
 }
 
 .product-image {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
 
+.product-image:hover {
+  transform: scale(1.1);
 }
 
 .prod {
-    margin-bottom: 45px;
-    display: flex;
-    align-items: center; /* Alinha verticalmente o retângulo e o h1 */
-    gap: 10px; /* Espaço entre o retângulo e o h1 */
-    align-items: center;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-   
+  margin-bottom: 45px;
+  display: flex;
+  align-items: center; /* Alinha verticalmente o retângulo e o h1 */
+  gap: 10px; /* Espaço entre o retângulo e o h1 */
+  align-items: center;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
 }
 
 .prod h1 {
-    text-align: center;
-    color: #0a3a58;
-    font-size: 30px;
-    font-weight: 50;
+  text-align: center;
+  color: #0a3a58;
+  font-size: 30px;
+  font-weight: 50;
 }
 
 .retangulo {
-    
-    height:1.5px;
-    width: 600px;
-    background-color: #0a3a58;
-    margin-left: 10px; /* Espaçamento entre o h1 e o retângulo */
-
+  height: 1.5px;
+  width: 600px;
+  background-color: #0a3a58;
+  margin-left: 10px; /* Espaçamento entre o h1 e o retângulo */
 }
+/* Reseta margens e paddings padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .hero {
-    font-family: "Epilogue", Sans-serif;
-    background-color: #0a3a58;
-    background-size: cover;
-    color: #73c1bf;
-    padding: 50px 15px; /* Adiciona padding lateral */
-    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
-    box-sizing: border-box; /* Inclui o padding e border na largura total */
+  font-family: "Epilogue", sans-serif;
+  background-color: #0a3a58;
+  color: #73c1bf;
+  padding: 40px 20px;
+  text-align: center;
 }
 
-.legenda {
-    margin-top: 8px; /* Adiciona espaço entre a imagem e a legenda */
-    color: #071f2c; /* Cor da legenda */
-    font-size: 14px; /* Tamanho da fonte da legenda, ajuste conforme necessário */
+.hero-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
-.hero p {
-    font-size: 20px;
-}
-.empresa {
-    text-align: center;
-    margin-bottom: 45px;
-    margin-top: 25px;
-    margin-left: 40px;
-   
+.hero-header p {
+  font-size: 1.2em;
+  font-weight: 300;
 }
 
-.conteudo {
-    background-color: #ffffff;
-    color: #0a3a58;
-    font-family: "Epilogue", Sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    border-radius: 20px;
-    padding: 20px; /* Adiciona padding interno */
-    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
-    box-sizing: border-box; /* Inclui o padding e border na largura total */
- 
+.hero-content {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .mapa {
-    flex: 1;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.conteudo h2 {
-    flex: 1;
-    font-size: 1.2em;
-    margin-right: 40px;
-    text-align: justify;
-    line-height: 1.8; /* Ajusta o espaçamento entre linhas */
+.info {
+  background-color: #ffffff;
+  color: #0a3a58;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.conteudo h1 {
-   
-    font-size: 28px;
-    
+.info h2 {
+  font-size: 1.1em;
+  line-height: 1.6;
 }
+
 .instagram {
-    text-align: center;
-    margin-top: 20px;
+  margin-top: 40px;
 }
 
 .instagram a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instagram img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.instagram img:hover {
+  transform: scale(1.1);
+}
+
+.instagram h3 {
+  font-size: 1.2em;
+}
+
+/* Adicionando responsividade */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info h2 {
+    font-size: 1em;
+    padding: 0 10px;
+  }
 }
 
 .services {
-    font-family: "Epilogue", Sans-serif;
-    padding: 50px 15px; /* Adiciona padding lateral */
-    text-align: center;
-    color: #071f2c;
-    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
-    box-sizing: border-box; /* Inclui o padding e border na largura total */
+  font-family: "Epilogue", Sans-serif;
+  padding: 50px 15px; /* Adiciona padding lateral */
+  text-align: center;
+  color: #071f2c;
+  width: 100%; /* Garante que a seção ocupe toda a largura disponível */
+  box-sizing: border-box; /* Inclui o padding e border na largura total */
 }
 
 .service-item {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 footer {
-    background-color: #0a3a58;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px 15px; /* Adiciona padding lateral */
+  background-color: #0a3a58;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 15px; /* Adiciona padding lateral */
 }
 .carousel-item img {
-    max-height: 100%; 
-    object-fit: cover; 
-    width: 100%; 
-    height: 290px; 
+  max-height: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 290px;
 }
 
- 
-
-
 .carousel-item {
-    position: relative;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); 
-    border-radius: 50%; 
-    width: 50px; 
-    height: 50px; 
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
 }
 
 .carousel-control-prev-icon::before,
 .carousel-control-next-icon::before {
-    content: ''; /* Remove o conteúdo padrão */
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 10px;
+  content: ""; /* Remove o conteúdo padrão */
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
 }
 
 .carousel-control-prev-icon::before {
-    transform: rotate(135deg); /* Rotaciona a seta para esquerda */
-    -webkit-transform: rotate(135deg);
+  transform: rotate(135deg); /* Rotaciona a seta para esquerda */
+  -webkit-transform: rotate(135deg);
 }
 
 .carousel-control-next-icon::before {
-    transform: rotate(-45deg); /* Rotaciona a seta para direita */
-    -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); /* Rotaciona a seta para direita */
+  -webkit-transform: rotate(-45deg);
 }
 
 .produtos {
-    font-family: "Epilogue", Sans-serif;
-    background-color: #ffffff;
-    color: #071f2c;
-   
-    padding: 48px 30px; /* Adiciona padding lateral */
-    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
-    box-sizing: border-box; /* Inclui o padding e border na largura total */
-    text-align: center; /* Centraliza o texto dentro da seção */
-  
+  font-family: "Epilogue", Sans-serif;
+  background-color: #ffffff;
+  color: #071f2c;
+
+  padding: 48px 30px; /* Adiciona padding lateral */
+  width: 100%; /* Garante que a seção ocupe toda a largura disponível */
+  box-sizing: border-box; /* Inclui o padding e border na largura total */
+  text-align: center; /* Centraliza o texto dentro da seção */
 }
 .prod {
-    display: flex;
-    gap: 10px; /* Espaço entre o retângulo e o h1 */
-    align-items: center;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  display: flex;
+  gap: 10px; /* Espaço entre o retângulo e o h1 */
+  align-items: center;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
 }
-.card{
-    margin-right: 60px; /* Ajuste conforme necessário */
-    margin-left: 15px;
-    padding: 0;
-    justify-content: center;
-    
-  
-   
-  }
+.card {
+  margin-right: 60px; /* Ajuste conforme necessário */
+  margin-left: 15px;
+  padding: 0;
+  justify-content: center;
+}
 
 .card-wrapper {
-    display: flex;
+  display: flex;
 
-    align-items: center;
-    gap: 20px; /* Espaçamento entre os cards */
-    flex-wrap: nowrap; /* Garante que os cards fiquem na mesma linha */
+  align-items: center;
+  gap: 20px; /* Espaçamento entre os cards */
+  flex-wrap: nowrap; /* Garante que os cards fiquem na mesma linha */
 }
-
-
