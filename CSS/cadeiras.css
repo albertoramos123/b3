@@ -63,7 +63,7 @@ left-transform: translate(-50%, -50%); /* Centraliza o logo */
   bottom: 0;
   width: 0; /* Começa com largura 0 */
   height: 2px; /* Altura da linha */
-  background-color: #0a3a58; /* Cor do traço */
+  background-color: #ffffff; /* Cor do traço */
   transform: translateX(-50%); /* Ajusta a posição horizontal para o centro */
   transform-origin: center; /* Origem da animação no centro */
   transition: width 0.3s ease; /* Transição suave da largura */
@@ -97,7 +97,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #73c1bf;
+  color: #ffffff;
   text-decoration: none; /* Garante-sublinhado removido no hover */
 }
 
@@ -189,6 +189,18 @@ nav ul .sub-dropdown li a:hover {
   margin-bottom: 20px;
   font-size: 25px;
   font-weight: 500; /* Peso da fonte dos links */
+}
+
+
+.product-image {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.product-image:hover {
+  transform: scale(1.1);
 }
 
 carousel-inner {
