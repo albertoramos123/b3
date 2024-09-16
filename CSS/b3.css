@@ -159,7 +159,6 @@ nav ul .sub-dropdown li a:hover {
   font-family: "Epilogue", Sans-serif;
   background-color: #ffffff;
   color: #0a3a58;
-  height: 600px;
   padding: 30px 30px; /* Adiciona padding lateral */
   width: 100%; /* Garante que a seção ocupe toda a largura disponível */
   box-sizing: border-box; /* Inclui o padding e border na largura total */
@@ -186,7 +185,15 @@ nav ul .sub-dropdown li a:hover {
   align-items: center;
   justify-content: center; /* Centraliza o conteúdo horizontalmente */
 }
+@media (max-width:768px) {
+  
+  .prod h1{
+font-size: 2px;
 
+  }
+
+
+}
 .prod h1 {
   text-align: center;
   color: #0a3a58;
@@ -369,10 +376,9 @@ footer {
   justify-content: center; /* Centraliza o conteúdo horizontalmente */
 }
 .card {
-  margin-right: 60px; /* Ajuste conforme necessário */
-  margin-left: 15px;
   padding: 0;
   justify-content: center;
+  max-width: 250px;
 }
 
 .card-wrapper {
@@ -381,4 +387,9 @@ footer {
   align-items: center;
   gap: 20px; /* Espaçamento entre os cards */
   flex-wrap: nowrap; /* Garante que os cards fiquem na mesma linha */
+}
+
+
+.carrosel-item {
+  justify-items: center;
 }

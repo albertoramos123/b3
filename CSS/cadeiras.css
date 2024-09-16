@@ -22,7 +22,7 @@ header {
   position:fixed; /* Faz o cabeçalho ficar fixo na tela */
   top: 0; /* Posiciona o cabeçalho no topo da página */
   right: 0;
-  width: 95%;
+  width: 100%;
 
   color: #ffffff0e;
   padding: 10px;
@@ -35,6 +35,7 @@ header {
 }
 .main-content {
   padding-top: 90px; /* Deve corresponder à altura do cabeçalho */
+  display: flex;
 }
 
 
@@ -182,6 +183,7 @@ nav ul .sub-dropdown li a:hover {
   color: #0e2431; /* Cor de fundo da sidebar */
   background-color: #ffffff;
   padding: 1rem; /* Espaçamento interno */
+  
 }
 
 .content h1 {
@@ -304,7 +306,5 @@ carousel-inner {
     margin-bottom: 1rem; /* Espaço abaixo da sidebar */
   }
 
-  .content {
-    margin-left: 0; /* Remove o espaçamento à esquerda */
-  }
+
 }
