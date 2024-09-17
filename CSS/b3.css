@@ -175,6 +175,21 @@ nav ul .sub-dropdown li a:hover {
 
 .product-image:hover {
   transform: scale(1.1);
+}#carouselExampleControls .carousel-item {
+  border: none; /* Remove borda do item do carrossel */
+  outline: none; /* Remove contorno do item do carrossel */
+}
+
+#carouselExampleControls .card {
+  border: none; /* Remove borda do card */
+  outline: none; /* Remove contorno do card */
+  box-shadow: none; /* Remove sombra do card */
+}
+
+#carouselExampleControls .card img {
+  border: none; /* Remove borda da imagem */
+  outline: none; /* Remove contorno da imagem */
+  box-shadow: none; /* Remove sombra da imagem */
 }
 
 .prod {
