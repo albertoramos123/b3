@@ -408,3 +408,36 @@ footer {
 .carrosel-item {
   justify-items: center;
 }
+
+.textoservice{
+  font-family: "Epilogue", Sans-serif;
+  background-color: #ffffff;
+  color: #0a3a58;
+ padding-right: 28%;
+  width: 100%; /* Garante que a seção ocupe toda a largura disponível */
+  box-sizing: border-box; /* Inclui o padding e border na largura total */
+
+
+
+}
+
+.textoservice h1{
+  text-align: center;
+  color: #0a3a58;
+  font-size: 30px;
+  font-weight: 50;
+  padding-right: 10%;
+
+
+}
+
+.listra1 {
+  height: 1.5px;
+  width: 600px;
+  background-color: #0a3a58;
+  margin-left: 45%; /* Espaçamento entre o h1 e o retângulo */
+  margin-top: -22px;
+ 
+  
+  
+}
