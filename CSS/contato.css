@@ -12,6 +12,7 @@ body {
 .container {
     width: 100%;
     padding: 0 15px; /* Adiciona algum padding lateral para melhor alinhamento */
+    padding: 4%;
 }
 
 header {
@@ -202,4 +203,11 @@ nav ul .sub-dropdown li a:hover {
     margin-right: 10px;
     vertical-align: middle;
 
+}
+
+.arroba {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: 50px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 5px; /* Espaço entre a imagem e o texto */
+    vertical-align:sub; /* Alinha verticalmente a imagem com o texto */
 }
