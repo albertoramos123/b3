@@ -296,7 +296,6 @@ carousel-inner {
   opacity: 1; /* Imagem do cartão hoverado mantém a opacidade normal */
   
 }
-
 /* Estilos para telas pequenas */
 @media (max-width: 768px) {
   .sidebar {

@@ -1,9 +1,4 @@
-@media (max-width: 600px) {
-  .container {
-    width: 100%;
-    padding: 10px;
-  }
-}
+
 
 body {
   font-family: "Epilogue", Sans-serif;
@@ -70,6 +65,7 @@ nav ul {
   align-items: center;
   font-size: 15px;
   margin-top: 12px;
+
 }
 
 nav ul li {
