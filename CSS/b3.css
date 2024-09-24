@@ -140,7 +140,7 @@ nav ul .sub-dropdown li a:hover {
 .first-carousel .carousel-item img {
   position: relative;
   width: 100%;
-  height: 880px;
+  height: 750px;
   object-fit: cover;
   z-index: -1;
 }
