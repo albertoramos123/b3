@@ -151,6 +151,45 @@ nav ul .sub-dropdown li a:hover {
   border-radius: 50%;
 }
 
+.redes {
+  font-family: "Epilogue", Sans-serif;
+  width: 100%;
+  height: 60px;
+ 
+  background-color: #ffffff;
+  display: flex;
+  align-content: center;
+  justify-content: center; /* Centraliza os itens */
+  padding: 15px;
+  align-items: center;
+  gap: 20px; /* Ajuste o valor conforme necessário para o espaço entre os itens */
+  text-decoration: none; /* Remove o sublinhado do link */
+  
+}
+
+.redes a{
+    
+  font-size: 15px;
+  margin: 0 10px;
+  text-decoration: none !important; /* Remove o sublinhado do link */
+  color:  #071f2c;
+  transition: color 0.3s; /* Efeito de transição ao passar o mouse */
+  font-weight: 50;
+
+}
+/* Efeito ao passar o mouse */
+.redes a:hover {
+  color:  #3ba4dd; /* Muda a cor do texto ao passar o mouse */
+}
+
+.icon{
+  margin-bottom: 2px;
+  margin-right: 5px;
+  width: 20px; /* Defina a largura desejada */
+  height: 20px; /* Defina a altura desejada */
+  vertical-align: middle; /* Alinha a imagem com o texto */
+}
+
 .produtos {
   font-family: "Epilogue", Sans-serif;
   background-color: #ffffff;
@@ -206,6 +245,7 @@ font-size: 2px;
 
 }
 .prod h1 {
+ 
   text-align: center;
   color: #0a3a58;
   font-size: 30px;
@@ -218,29 +258,25 @@ font-size: 2px;
   background-color: #0a3a58;
   margin-left: 10px; /* Espaçamento entre o h1 e o retângulo */
 }
-/* Reseta margens e paddings padrões */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 .hero {
   font-family: "Epilogue", sans-serif;
   background-color: #0a3a58;
-  color: #73c1bf;
-  padding: 40px 20px;
+  color: #ffffff;
+  padding: 60px 20px;
   text-align: center;
 }
 
 .hero-header h1 {
-  font-size: 2.5em;
+  font-size: 2.3em;
   margin-bottom: 10px;
 }
 
 .hero-header p {
+  font-family: "Epilogue", sans-serif;
   font-size: 1.2em;
-  font-weight: 300;
+  font-weight: 330;
 }
 
 .hero-content {
@@ -251,28 +287,52 @@ font-size: 2px;
   gap: 20px;
 }
 
-.mapa {
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+
 
 .info {
-  background-color: #ffffff;
-  color: #0a3a58;
+  background-color:#0b4061;
+  border: 2px solid #0a3a58; /* Borda colorida */
+  color: #ffffff;
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.info {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Transições suaves */
+  border-radius: 10px; /* Bordas arredondadas */
+  overflow: hidden; /* Para esconder conteúdos que saem do cartão */
+}
+
+.info:hover {
+  transform: translateY(-15px) scale(1.01); /* Levanta e aumenta o cartão ao passar o mouse */
+  box-shadow: 0 16px 30px rgba(47, 45, 45, 0.5); /* Sombra mais suave */
+  border-color: #0a3a58;
+  background-color: #0f5078;
+  color: #ffffff;
+ 
+ 
+}
+
+/* Opcional: Sombra no estado normal */
+.info {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
 
 .info h2 {
   font-size: 1.1em;
   line-height: 1.6;
 }
 
+
+
 .instagram {
   margin-top: 40px;
 }
-
+.mapa {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 .instagram a {
   text-decoration: none;
   color: inherit;
@@ -324,8 +384,8 @@ font-size: 2px;
 }
 
 footer {
-  background-color: #0a3a58;
-  color: #ffffff;
+  background-color: #ffffff;
+  color:  #071f2c;
   text-align: center;
   padding: 20px 15px; /* Adiciona padding lateral */
 }
