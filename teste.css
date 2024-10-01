@@ -1,94 +1,165 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+x'
+<!DOCTYPE html>
+<html lang="pt-br">
 
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B3 Ambientes Corporativos</title>
+    <link rel="stylesheet" href="CSS/contato.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap">
+</head>
+<div>
 
-.container {
-    height: 100vh;
-}
+    <body>
+        <header class="d-flex justify-content-center">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-.btn {
-    width: 150px;
-    height: 45px;
-    font-weight: 500;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden; /* Para esconder as linhas */
-    background: transparent; /* Cor de fundo padrão */
-    border: none; /* Remove a borda padrão */
-    color: #7029c7; /* Cor do texto padrão */
-    transition: color 0.4s; /* Transição suave para a cor do texto */
-}
+                <a class="navbar-brand" href="/b3/index.html">
+                    <img src="IMG/Logob3.png" alt="Logo B3 Ambientes Corporativos" class="logo" />
 
-.btn:hover {
-    background: #7029c7; /* Cor de fundo ao passar o mouse */
-    color: #fff; /* Cor do texto ao passar o mouse */
-    font-size: 1.2rem;
-}
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="d-md-flex d-block ">
 
-.d1, .d2, .d3, .d4 {
-    position: absolute;
-    background: #7029c7;
-    transition: all 0.4s ease; /* Transição suave */
-}
+                        <li class="menu-item"><a href="sobrenos.html">Sobre nós</a></li>
+                        <li class="menu-item">
+                            <a href="#"> Produtos</a>
+                            <ul class="dropdown">
+                                <li class="menu-item">
+                                    <a href="poltrona.html"><img class="product-image"
+                                        src="https://img.icons8.com/?size=100&id=25289&format=png&color=000000" alt="table" />
+                                      Poltronas
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="cadeiras.html"><img class="product-image"
+                                        src="https://img.icons8.com/ios/50/office-chair-2.png" alt="table" />
+                                      Cadeiras</a>
 
-.d1, .d2 {
-    width: 100%;
-    height: 4px;
-    transform: scaleX(0); /* Início invisível */
-}
+                                    <ul class="sub-dropdown">
+                                        <li><a href="cadeiras.html">- office</a></li> 
+                                        <li><a href="Multifuncionais.html">- Multifuncionais</a></li>
+                                        <li><a href="decor.html">- Decor</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="mobiliario.html"><img class="product-image" src="https://img.icons8.com/ios/50/table.png"
+                                        alt="table" />
+                                      Mobiliário</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="product-image"
+                                            src="https://img.icons8.com/isometric-line/50/report-card.png"
+                                            alt="table" />
+                                        Divisórias</a>
+                                </li>
+                                <li>
+                                    <a href="auditório.html"><img class="product-image"
+                                        src="https://img.icons8.com/ios-filled/50/auditorium--v1.png" alt="table" />
+                                      Auditório
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img class="product-image"
+                                            src="https://img.icons8.com/?size=100&id=11555&format=png&color=000000"
+                                            alt="table" />
+                                        Acústicas</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img class="product-image"
+                                            src="https://img.icons8.com/?size=100&id=33796&format=png&color=000000"
+                                            alt="table" />
+                                        Sofás</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img class="product-image"
+                                            src="https://img.icons8.com/?size=100&id=11321&format=png&color=000000"
+                                            alt="table" />
+                                        Escolar</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="puffs.html"><img class="product-image"
+                                        src="https://img.icons8.com/puffy/32/sofa.png" alt="table" />
+                                      Puff
+                                    </a>
+                                  </li>
+                                <li>
+                                    <a href="#"><img class="product-image"
+                                            src="https://img.icons8.com/?size=100&id=60612&format=png&color=000000"
+                                            alt="table" />
+                                        Refeitório</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img class="product-image"
+                                            src="https://img.icons8.com/windows/32/ellipsis.png" alt="table" />
+                                        Outros</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="https://forms.gle/FAqarJxgnt2YT5mD8">Arquitetos</a>
+                        </li>
+                        <li class="menu-item">
+                            <a
+                                href="https://drive.google.com/file/d/1OQqKCnvcf6vvEbHztaHXVQsgfnRhGKnw/view?usp=sharing">Catálogos</a>
+                        </li>
+                        <li class="menu-item"><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
 
-.d1 {
-    top: 0;
-    transform-origin: left;
-}
 
-.d2 {
-    bottom: 0;
-    transform-origin: right;
-}
+</div>
+</header>
 
-.d3, .d4 {
-    width: 4px;
-    height: 100%;
-    transform: scaleY(0); /* Início invisível */
-}
+</div>
+<div>
+    <section class="contact-section">
+        <div class="container">
+            <h1>CONTATO</h1>
+            <div class="retangulo"></div>
+            <p>Entre em contato conosco pelos nossos canais de comunicação ou através do formulário abaixo :</p>
+            <ul class="contact-info">
+                <li><a href="https://wa.me/message/JWIVEWQSBKEBP1" target="_blank"><img
+                            src="https://img.icons8.com/?size=100&id=16733&format=png&color=0a3a58" alt="WhatsApp">
+                        WhatsApp</a></li>
+                <li><a class="mail d-sm-grid d-md-flex  justify-content-center"
+                        href="mailto:comercial@b3ambientescorporativos.com.br"><img class="arroba"
+                            src="https://img.icons8.com/?size=100&id=85500&format=png&color=0a3a58" alt="Email">
+                        comercial@b3ambientescorporativos.com.br</a></li>
+            </ul>
+            <form action="#" method="post" class="contact-form justify-content-center">
+                <div class="form-group ">
 
-.d3 {
-    left: 0;
-    transform-origin: bottom;
-}
+                    <label class="name d-sm-grid justify-content-center" for="name">Nome</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group d-sm-grid justify-content-center">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group d-sm-grid justify-content-center">
+                    <label for="message">Mensagem</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary d-sm-grid justify-content-center">Enviar</button>
+            </form>
+        </div>
+    </section>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-.d4 {
-    right: 0;
-    transform-origin: top;
-}
 
-/* Efeitos de hover */
-.btn:hover .d1,
-.btn:hover .d2 {
-    transform: scaleX(1); /* Aparece ao passar o mouse */
-}
-
-.btn:hover .d3,
-.btn:hover .d4 {
-    transform: scaleY(1); /* Aparece ao passar o mouse */
-}
-
-/* Animação de saída (reverter para invisível) */
-.btn:not(:hover) .d1,
-.btn:not(:hover) .d2 {
-    transform: scaleX(0); /* Volta ao estado inicial */
-}
-
-.btn:not(:hover) .d3,
-.btn:not(:hover) .d4 {
-    transform: scaleY(0); /* Volta ao estado inicial */
-}
+</html>

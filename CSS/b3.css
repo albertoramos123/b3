@@ -124,6 +124,21 @@ nav ul .sub-dropdown li a:hover {
   background-color: #f8f9fa;
 }
 
+.navbar-toggler {
+  background-color: #0a3a58; /* Cor de fundo do botão */
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: none; /* Remove a imagem padrão do ícone */
+}
+
+.navbar-toggler:after {
+  content: "\f0c9"; /* Código do Font Awesome para o ícone de "hambúrguer" */
+  font-family: "Font Awesome 5 Free"; /* Dependendo do que você estiver usando */
+  font-weight: 900; /* Dependendo do que você estiver usando */
+  color:#0a3a58;/* Cor do ícone */
+}
+
 .logo2 {
   position: absolute;
   z-index: 1;

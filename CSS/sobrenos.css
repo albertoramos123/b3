@@ -87,6 +87,9 @@ nav ul .sub-dropdown li a:hover {
     background-color: #f8f9fa;
 }
 
+
+
+
 .product-image {
     width: 30px;
     height: 30px;
@@ -102,17 +105,20 @@ nav ul .sub-dropdown li a:hover {
 }
 
 .about-section h1 {
+    margin-top: 0; /* Remova ou ajuste este valor */
     text-align: center;
     color: #0a3a58;
     margin-bottom: 20px;
-    margin-top: 20%;
+    font-size: 35px;
+    font-weight: 1250;
 }
 
 .about-section .retangulo {
     width: 150px;
-    height: 10px;
+    height:4px;
     background-color: #0a3a58;
     margin: 0 auto 20px;
+    margin-top: -10px;
 }
 
 .about-section p {
@@ -120,12 +126,24 @@ nav ul .sub-dropdown li a:hover {
     font-size: 18px;
     color: #333;
     margin-bottom: 40px;
+    
+
+    margin-top: 0; /* Remova ou ajuste este valor */
+    text-align: center;
+    color: #0a3a58;
+    margin-bottom: 20px;
+ 
+    font-weight: 150;
 }
 
 .about-section h2 {
     text-align: center;
     color: #0a3a58;
     margin-bottom: 20px;
+    margin-top: 0; /* Remova ou ajuste este valor */
+    text-align: center;
+    color: #0a3a58;
+  font-weight: 400;
 }
 
 .values-list {
@@ -133,6 +151,14 @@ nav ul .sub-dropdown li a:hover {
     padding: 0;
     text-align: center;
     margin-bottom: 40px;
+
+
+    margin-top: 0; /* Remova ou ajuste este valor */
+    text-align: center;
+    color: #0a3a58;
+    margin-bottom: 20px;
+ 
+    font-weight: 150;
 }
 
 .values-list li {

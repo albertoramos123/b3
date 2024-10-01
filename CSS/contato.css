@@ -1,6 +1,4 @@
 
-  
-
 body {
     font-family: "Epilogue", Sans-serif;
     margin: 0;
@@ -8,13 +6,17 @@ body {
     box-sizing: border-box;
     background-color: #73c1bf;
 }
-
-.container {
-    width: 100%;
-    padding: 0 15px; /* Adiciona algum padding lateral para melhor alinhamento */
-    padding: 4%;
+.contact-section {
+    position: relative;
+    padding: 20px 0; /* Reduza ou remova o padding superior */
+    background-color: #f9f9f9;
 }
 
+
+.container {
+    padding-top: 0; /* Remove o padding superior do container */
+    margin-top: 0; /* Remove o margin superior do container, se existir */
+}
 header {
     font-family: "Epilogue", Sans-serif;
     position: fixed; /* Faz o cabeçalho ficar fixo na tela */
@@ -24,11 +26,24 @@ header {
     color: #ffffff0e;
     padding: 10px;
     z-index: 1000;
-    background-color: #ffffff;
+    background-color: #eff0f4c5;
     height: 85px;
     opacity: 0.9;
 }
+.navbar-toggler {
+    background-color: #0a3a58; /* Cor de fundo do botão */
+}
 
+.navbar-toggler .navbar-toggler-icon {
+    background-image: none; /* Remove a imagem padrão do ícone */
+}
+
+.navbar-toggler:after {
+    content: "\f0c9"; /* Código do Font Awesome para o ícone de "hambúrguer" */
+    font-family: "Font Awesome 5 Free"; /* Dependendo do que você estiver usando */
+    font-weight: 900; /* Dependendo do que você estiver usando */
+    color:#0a3a58;/* Cor do ícone */
+}
 .logo {
     width: 49px;
     margin-right: 45px;
@@ -111,13 +126,19 @@ nav ul .sub-dropdown li a:hover {
 }
 
 .contact-section h1 {
-    margin-top: 35px;
+    margin-top: 0; /* Remova ou ajuste este valor */
     text-align: center;
     color: #0a3a58;
     margin-bottom: 20px;
     font-size: 35px;
     font-weight: 150;
 }
+.contact-info a img {
+    margin-right: 10px;
+    max-width: 28px; /* Ajuste conforme necessário */
+    height: auto; /* Para manter a proporção */
+}
+
 
 .contact-section .retangulo {
     width: 150px;
