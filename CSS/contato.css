@@ -1,4 +1,12 @@
 
+html, body {
+    height: 100%;
+    overflow: hidden; /* Desativa o scroll */
+}
+
+.contact-section {
+    height: 100%; /* Garante que a seção de contato ocupe 100% da altura da janela e faz parte do scroll*/
+}
 body {
     font-family: "Epilogue", Sans-serif;
     margin: 0;

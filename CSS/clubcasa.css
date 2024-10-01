@@ -6,6 +6,15 @@ body {
     box-sizing: border-box;
     background-color: #73c1bf;
 }
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* Desativa o scroll */
+}
+
+.contact-section {
+    height: 100%; /* Garante que a seção de contato ocupe 100% da altura da janela e faz parte do scroll*/
+}
 .contact-section {
     position: relative;
     padding: 20px 0; /* Reduza ou remova o padding superior */
