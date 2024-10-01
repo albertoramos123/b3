@@ -148,12 +148,12 @@ nav ul {
     color: #0a3a58;
     margin-bottom: 20px;
     font-size: 35px;
-    font-weight: 1250;
+    font-weight: 400;
 }
 
 .about-section .retangulo {
     width: 150px;
-    height:4px;
+    height:3px;
     background-color: #0a3a58;
     margin: 0 auto 20px;
     margin-top: -10px;
