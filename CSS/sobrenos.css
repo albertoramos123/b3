@@ -2,216 +2,256 @@
 
 
 header {
-    font-family: "Epilogue", Sans-serif;
-    position: fixed; /* Faz o cabeçalho ficar fixo na tela */
-    top: 0; /* Posiciona o cabeçalho no topo da página */
-    left: 0;
-    width: 100%;
-    color: #ffffff0e;
-    padding: 10px;
-    z-index: 1;
-    background-color: #ffffff;
-    height: 85px;
-    opacity: 0.9;
+  font-family: "Epilogue", Sans-serif;
+  position: fixed; /* Faz o cabeçalho ficar fixo na tela */
+  top: 0; /* Posiciona o cabeçalho no topo da página */
+  left: 0;
+  width: 100%;
+  color: #ffffff0e;
+  padding: 10px;
+  z-index: 1;
+  background-color: #ffffff;
+  height: 85px;
+  opacity: 0.9;
 }
 
 .logo {
-    width: 49px;
-    margin-right: 45px;
+  width: 49px;
+  margin-right: 45px;
 }
 
 
 nav ul {
-    font-family: "Epilogue", Sans-serif;
-    list-style: none;
-    display: flex;
-    gap: 0%;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    margin-top: 12px;
-  
-  }
-  
-  nav ul li {
-    position: relative;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #0a3a58;
-    padding: 10px 20px;
-  
-    font-weight: 350;
-  }
-  
-  nav ul li a:hover {
-    color: #73c1bf;
-    text-decoration: none; /* Garante-sublinhado removido no hover */
-  }
-  
-  nav ul li:hover .dropdown {
-    display: block;
-  }
-  
-  nav ul .dropdown,
-  nav ul .sub-dropdown {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    min-width: 200px;
-    border-radius: 4px;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul .sub-dropdown {
-    left: 100%;
-    top: 0;
-  }
-  
-  nav ul li:hover > .dropdown,
-  .dropdown li:hover > .sub-dropdown {
-    display: block;
-  }
-  
-  nav ul .dropdown li a,
-  nav ul .sub-dropdown li a {
-    padding: 10px 20px;
-    color: #333;
-    display: block;
-  }
-  
-  nav ul .dropdown li a:hover,
-  nav ul .sub-dropdown li a:hover {
-    background-color: #f8f9fa;
-  }
-  
-  .navbar-toggler {
-    background-color: #0a3a58; /* Cor de fundo do botão */
-  }
-  
-  .navbar-toggler .navbar-toggler-icon {
-    background-image: none; /* Remove a imagem padrão do ícone */
-  }
-  
-  .navbar-toggler:after {
-    content: "\f0c9"; /* Código do Font Awesome para o ícone de "hambúrguer" */
-    font-family: "Font Awesome 5 Free"; /* Dependendo do que você estiver usando */
-    font-weight: 900; /* Dependendo do que você estiver usando */
-    color:#0a3a58;/* Cor do ícone */
-  }
+  font-family: "Epilogue", Sans-serif;
+  list-style: none;
+  display: flex;
+  gap: 0%;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  margin-top: 12px;
 
-  .menu-item a {
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    padding-top: 5px; /* Espaço para o traço */
-  }
-  
-  .menu-item a::before {
-    content: "";
-    position: absolute;
-    left: 50%; /* Centraliza horizontalmente */
-    bottom: 0;
-    width: 0; /* Começa com largura 0 */
-    height: 2px; /* Altura da linha */
-    background-color: #0a3a58; /* Cor do traço */
-    transform: translateX(-50%); /* Ajusta a posição horizontal para o centro */
-    transform-origin: center; /* Origem da animação no centro */
-    transition: width 0.3s ease; /* Transição suave da largura */
-  }
-  
-  .menu-item a:hover::before {
-    width: 50%; /* Expande a linha para a largura total */
-  }
+}
+
+nav ul li {
+  position: relative;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #0a3a58;
+  padding: 10px 20px;
+
+  font-weight: 350;
+}
+
+nav ul li a:hover {
+  color: #73c1bf;
+  text-decoration: none; /* Garante-sublinhado removido no hover */
+}
+
+nav ul li:hover .dropdown {
+  display: block;
+}
+
+nav ul .dropdown,
+nav ul .sub-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul .sub-dropdown {
+  left: 100%;
+  top: 0;
+}
+
+nav ul li:hover > .dropdown,
+.dropdown li:hover > .sub-dropdown {
+  display: block;
+}
+
+nav ul .dropdown li a,
+nav ul .sub-dropdown li a {
+  padding: 10px 20px;
+  color: #333;
+  display: block;
+}
+
+nav ul .dropdown li a:hover,
+nav ul .sub-dropdown li a:hover {
+  background-color: #f8f9fa;
+}
+
+.navbar-toggler {
+  background-color: #0a3a58; /* Cor de fundo do botão */
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: none; /* Remove a imagem padrão do ícone */
+}
+
+.navbar-toggler:after {
+  content: "\f0c9"; /* Código do Font Awesome para o ícone de "hambúrguer" */
+  font-family: "Font Awesome 5 Free"; /* Dependendo do que você estiver usando */
+  font-weight: 900; /* Dependendo do que você estiver usando */
+  color:#0a3a58;/* Cor do ícone */
+}
+
+.menu-item a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding-top: 5px; /* Espaço para o traço */
+}
+
+.menu-item a::before {
+  content: "";
+  position: absolute;
+  left: 50%; /* Centraliza horizontalmente */
+  bottom: 0;
+  width: 0; /* Começa com largura 0 */
+  height: 2px; /* Altura da linha */
+  background-color: #0a3a58; /* Cor do traço */
+  transform: translateX(-50%); /* Ajusta a posição horizontal para o centro */
+  transform-origin: center; /* Origem da animação no centro */
+  transition: width 0.3s ease; /* Transição suave da largura */
+}
+
+.menu-item a:hover::before {
+  width: 50%; /* Expande a linha para a largura total */
+}
 
 .product-image {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 .about-section {
-    padding: 100px 0;
-    background-color: #ffffff;
-    margin-top: 1px; /* Aumentado para garantir que fique abaixo do cabeçalho */
-    z-index: 10;
+  padding: 100px 0;
+  background-color: #ffffff;
+  margin-top: 1px; /* Aumentado para garantir que fique abaixo do cabeçalho */
+  z-index: 10;
 }
 
 .about-section h1 {
-    margin-top: 0; /* Remova ou ajuste este valor */
-    text-align: center;
-    color: #0a3a58;
-    margin-bottom: 20px;
-    font-size: 35px;
-    font-weight: 400;
-}
-
-.about-section .retangulo {
-    width: 150px;
-    height:3px;
-    background-color: #0a3a58;
-    margin: 0 auto 20px;
-    margin-top: -10px;
-}
-
-.about-section p {
-    text-align: center;
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 40px;
-    
-
-    margin-top: 0; /* Remova ou ajuste este valor */
-    text-align: center;
-    color: #0a3a58;
-    margin-bottom: 20px;
- 
-    font-weight: 150;
-}
-
-.about-section h2 {
-    text-align: center;
-    color: #0a3a58;
-    margin-bottom: 20px;
-    margin-top: 0; /* Remova ou ajuste este valor */
-    text-align: center;
-    color: #0a3a58;
+  margin-top: 0; /* Remova ou ajuste este valor */
+  text-align: center;
+  color: #0a3a58;
+  margin-bottom: 20px;
+  font-size: 35px;
   font-weight: 400;
 }
 
+.about-section .retangulo {
+  width: 150px;
+  height:3px;
+  background-color: #0a3a58;
+  margin: 0 auto 20px;
+  margin-top: -10px;
+}
+
+.about-section p {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 40px;
+  
+
+  margin-top: 0; /* Remova ou ajuste este valor */
+  text-align: center;
+  color: #0a3a58;
+  margin-bottom: 20px;
+
+  font-weight: 150;
+}
+
+.about-section h2 {
+  text-align: center;
+  color: #0a3a58;
+  margin-bottom: 20px;
+  margin-top: 0; /* Remova ou ajuste este valor */
+  text-align: center;
+  color: #0a3a58;
+font-weight: 400;
+}
+
 .values-list {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    margin-bottom: 40px;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 40px;
 
 
-    margin-top: 0; /* Remova ou ajuste este valor */
-    text-align: center;
-    color: #0a3a58;
-    margin-bottom: 20px;
- 
-    font-weight: 150;
+  margin-top: 0; /* Remova ou ajuste este valor */
+  text-align: center;
+  color: #0a3a58;
+  margin-bottom: 20px;
+
+  font-weight: 150;
 }
 
 .values-list li {
-    font-size: 18px;
-    margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 footer {
-    font-family: "Epilogue", Sans-serif;
-    background-color: #0a3a58;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+  font-family: "Epilogue", Sans-serif;
+  background-color: #071f2c;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
 
 footer p {
-    margin: 0;
+  margin: 0;
+}
+
+
+.redes {
+font-family: "Epilogue", Sans-serif;
+width: 100%;
+height: 60px;
+
+background-color: #071f2c;
+
+align-content: center;
+justify-content: center; /* Centraliza os itens */
+padding: 15px;
+align-items: center;
+gap: 20px; /* Ajuste o valor conforme necessário para o espaço entre os itens */
+text-decoration: none; /* Remove o sublinhado do link */
+
+}
+
+.redes a{
+  
+font-size: 15px;
+margin: 0 10px;
+text-decoration: none !important; /* Remove o sublinhado do link */
+color:  #f5f6f7;
+transition: color 0.3s; /* Efeito de transição ao passar o mouse */
+font-weight: 50;
+
+}
+/* Efeito ao passar o mouse */
+.redes a:hover {
+color:  #3ba4dd; /* Muda a cor do texto ao passar o mouse */
+}
+
+.icon{
+margin-bottom: 2px;
+margin-right: 5px;
+width: 20px; /* Defina a largura desejada */
+height: 20px; /* Defina a altura desejada */
+vertical-align: middle; /* Alinha a imagem com o texto */
 }
