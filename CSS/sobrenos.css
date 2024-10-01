@@ -20,6 +20,7 @@ header {
     margin-right: 45px;
 }
 
+
 nav ul {
     font-family: "Epilogue", Sans-serif;
     list-style: none;
@@ -28,31 +29,33 @@ nav ul {
     justify-content: center;
     align-items: center;
     font-size: 15px;
-    margin-top: 5px;
-}
-
-nav ul li {
+    margin-top: 12px;
+  
+  }
+  
+  nav ul li {
     position: relative;
     margin-right: 20px;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     color: #0a3a58;
     padding: 10px 20px;
-    text-decoration: none;
+  
     font-weight: 350;
-}
-
-nav ul li a:hover {
+  }
+  
+  nav ul li a:hover {
     color: #73c1bf;
-}
-
-nav ul li:hover .dropdown {
+    text-decoration: none; /* Garante-sublinhado removido no hover */
+  }
+  
+  nav ul li:hover .dropdown {
     display: block;
-}
-
-nav ul .dropdown,
-nav ul .sub-dropdown {
+  }
+  
+  nav ul .dropdown,
+  nav ul .sub-dropdown {
     display: none;
     position: absolute;
     background-color: #fff;
@@ -62,33 +65,68 @@ nav ul .sub-dropdown {
     border-radius: 4px;
     padding: 0;
     margin: 0;
-}
-
-nav ul .sub-dropdown {
+  }
+  
+  nav ul .sub-dropdown {
     left: 100%;
     top: 0;
-}
-
-nav ul li:hover > .dropdown,
-.dropdown li:hover > .sub-dropdown {
+  }
+  
+  nav ul li:hover > .dropdown,
+  .dropdown li:hover > .sub-dropdown {
     display: block;
-}
-
-nav ul .dropdown li a,
-nav ul .sub-dropdown li a {
+  }
+  
+  nav ul .dropdown li a,
+  nav ul .sub-dropdown li a {
     padding: 10px 20px;
     color: #333;
     display: block;
-    text-decoration: none;
-}
-
-nav ul .dropdown li a:hover,
-nav ul .sub-dropdown li a:hover {
+  }
+  
+  nav ul .dropdown li a:hover,
+  nav ul .sub-dropdown li a:hover {
     background-color: #f8f9fa;
-}
+  }
+  
+  .navbar-toggler {
+    background-color: #0a3a58; /* Cor de fundo do botão */
+  }
+  
+  .navbar-toggler .navbar-toggler-icon {
+    background-image: none; /* Remove a imagem padrão do ícone */
+  }
+  
+  .navbar-toggler:after {
+    content: "\f0c9"; /* Código do Font Awesome para o ícone de "hambúrguer" */
+    font-family: "Font Awesome 5 Free"; /* Dependendo do que você estiver usando */
+    font-weight: 900; /* Dependendo do que você estiver usando */
+    color:#0a3a58;/* Cor do ícone */
+  }
 
-
-
+  .menu-item a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding-top: 5px; /* Espaço para o traço */
+  }
+  
+  .menu-item a::before {
+    content: "";
+    position: absolute;
+    left: 50%; /* Centraliza horizontalmente */
+    bottom: 0;
+    width: 0; /* Começa com largura 0 */
+    height: 2px; /* Altura da linha */
+    background-color: #0a3a58; /* Cor do traço */
+    transform: translateX(-50%); /* Ajusta a posição horizontal para o centro */
+    transform-origin: center; /* Origem da animação no centro */
+    transition: width 0.3s ease; /* Transição suave da largura */
+  }
+  
+  .menu-item a:hover::before {
+    width: 50%; /* Expande a linha para a largura total */
+  }
 
 .product-image {
     width: 30px;
