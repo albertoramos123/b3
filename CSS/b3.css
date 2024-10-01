@@ -389,48 +389,20 @@ font-size: 2px;
     padding: 0 10px;
   }
 }
-.services {
-    padding: 40px 20px;
-}
 
-.container {
-    display: flex;
-    gap: 20px; /* Espaçamento entre os itens */
-    max-width: 1000px; /* Largura máxima do container */
-    margin: auto; /* Centraliza o container */
-    flex-wrap: wrap; /* Permite quebra de linha se necessário */
+.services {
+  font-family: "Epilogue", Sans-serif;
+  padding: 50px 15px; /* Adiciona padding lateral */
+  text-align: center;
+  color: #071f2c;
+  width: 100%; /* Garante que a seção ocupe toda a largura disponível */
+  box-sizing: border-box; /* Inclui o padding e border na largura total */
 }
 
 .service-item {
-    background-color: #0b4061;
-    border: 2px solid #0a3a58; /* Borda colorida */
-    color: #ffffff;
-    border-radius: 15px; /* Bordas arredondadas */
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Transições suaves */
-    overflow: hidden; /* Para esconder conteúdos que saem do cartão */
-    flex: 1 1 30%; /* Faz os itens ocuparem 30% da largura disponível */
-    min-width: 250px; /* Largura mínima dos itens */
+  margin: 20px 0;
 }
 
-.service-item:hover {
-    transform: translateY(-15px) scale(1.01); /* Levanta e aumenta o cartão ao passar o mouse */
-    box-shadow: 0 16px 30px rgba(47, 45, 45, 0.5); /* Sombra mais suave */
-    border-color: #0a3a58;
-    background-color: #0f5078;
-    color: #ffffff; /* Mantém a cor do texto ao passar o mouse */
-}
-
-.service-item h3 {
-    font-size: 1.2em;
-    line-height: 1.4;
-}
-
-.service-item p {
-    margin: 10px 0 0;
-    font-size: 0.9em;
-}
 footer {
   background-color: #ffffff;
   color:  #071f2c;
@@ -534,7 +506,7 @@ footer {
   text-align: center;
   color: #0a3a58;
   font-size: 30px;
-  font-weight: 50;
+  font-weight: 50;
 
 
 }
