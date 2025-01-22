@@ -543,3 +543,19 @@ footer {
 
 
 }
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  width: 1%;
+  height: 50px;
+ 
+
+ 
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding-right: 40px;
+   
+}
